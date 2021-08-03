@@ -1,0 +1,8 @@
+.navbarMain{
+    width: 1000px;
+    background-color: yellow;
+}
+.navbarBrand{
+    font-size: 3rem;
+    margin-top: 20px;
+}
