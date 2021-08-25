@@ -1,3 +1,103 @@
+export const PRODUCTSHORT = [
+  {
+    "SKU": "10_CH.EVERGREEN_SILVER.BAY",
+    "Available": 10
+  },
+  {
+    "SKU": "10_SNAKE_LAURENTII",
+    "Available": 22
+  },
+  {
+    "SKU": "2_CACT_GRAFT_RED",
+    "Available": 58
+  },
+  {
+    "SKU": "2_SNAKE_STARFISH",
+    "Available": 68
+  },
+  {
+    "SKU": "4_ALOCASIA_BLACK.VELVET",
+    "Available": 16
+  },
+  {
+    "SKU": "4_ANTHURIUM_PINK",
+    "Available": 28
+  },
+  {
+    "SKU": "4_ANTHURIUM_PINK_BARE.ROOT",
+    "Available": 28
+  },
+  {
+    "SKU": "4_ANTHURIUM_PURPLE",
+    "Available": 26
+  },
+  {
+    "SKU": "4_ANTHURIUM_PURPLE_PP.WHT.TERRA",
+    "Available": 17
+  },
+  {
+    "SKU": "4_ANTHURIUM_RED",
+    "Available": 16
+  },
+  {
+    "SKU": "4_ANTHURIUM_RED_PP.NAVARRO",
+    "Available": 15
+  },
+  {
+    "SKU": "4_ANTHURIUM_WHITE",
+    "Available": 49
+  },
+  {
+    "SKU": "4_ARABICA_COFFEE",
+    "Available": 125
+  },
+  {
+    "SKU": "4_BROMELIAD_CHRISTIANE",
+    "Available": 33
+  },
+  {
+    "SKU": "4_BROMELIAD_CHRISTIANE_PP.HUEY",
+    "Available": 33
+  },
+  {
+    "SKU": "4_BROMELIAD_CYANEA",
+    "Available": 26
+  },
+  {
+    "SKU": "4_BROMELIAD_DONNA",
+    "Available": 72
+  },
+  {
+    "SKU": "4_BROMELIAD_FIREBALL",
+    "Available": 14
+  },
+  {
+    "SKU": "4_BROMELIAD_SPLENRIET",
+    "Available": 62
+  },
+  {
+    "SKU": "4_CALATHEA_BEAUTY.STAR",
+    "Available": 103
+  },
+  {
+    "SKU": "4_CALATHEA_DOTTIE",
+    "Available": 14
+  },
+  {
+    "SKU": "4_CALATHEA_FREDDIE",
+    "Available": 82
+  },
+  {
+    "SKU": "4_CALATHEA_FURRY.FEATHER",
+    "Available": 39
+  },
+  {
+    "SKU": "4_CALATHEA_GREY.STAR",
+    "Available": 10
+  },
+]
+
+
 export const PRODUCTLIST = [
     {
       "SKU": "10_CH.EVERGREEN_SILVER.BAY",

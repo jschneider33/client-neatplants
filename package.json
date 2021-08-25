@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chec/commerce.js": "^2.7.2",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.2",
     "next": "11.0.1",
