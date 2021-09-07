@@ -1,0 +1,20 @@
+@use './variables' as *
+
+.list
+    list-style: none
+    padding: 30px 10px
+
+.listItem
+    font-size: 1.2rem
+    // padding: 15px 10px
+    border-top: 1px solid $color-tana
+    &:last-child
+        border-bottom: 1px solid $color-tana
+    &:hover
+        background-color: $color-tana
+
+.listItemLink
+    display: block
+    padding: 15px 10px
+    &:hover 
+        color: black

@@ -1,14 +1,23 @@
 @use './variables' as *
 
+.prodCol
+    // border: 1px solid lightgrey
+    padding: 30px
+
 .name
     font-size: 1.5rem
     font-weight: 400
-
+    margin-bottom: 0
+    
 .subName
     font-size: 1.2rem
 
 .imageDiv
+    width: 280px
+    height: 280px
     text-align: center
+    box-shadow: 0 0 10px -6px
+    margin-bottom: 10px
 
 .startingAt
     font-size: 0.8rem
@@ -19,3 +28,17 @@
 .price
     font-size: 1.4rem
     font-weight: 700
+
+.size
+    display: table
+    margin: 0 auto
+
+.sizeList
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    list-style: none
+    padding-left: 0
+
+.sizeListItem
+    padding: 0 5px

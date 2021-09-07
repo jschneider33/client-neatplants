@@ -3,8 +3,9 @@
     
 .main
     width: 100%
-    background-color: $color-stone
+    background-color: $color-red
     margin: 0 auto
+    box-shadow: 0 0 20px -10px
 
 .navCont
     max-width: 1000px
@@ -13,7 +14,7 @@
 .brand
     font-size: 1.6rem
     margin-top: 0
-    color: ($color-red !important)
+    color: ($color-stone !important)
     line-height: 1
 
 .navItems
@@ -25,14 +26,63 @@
     margin-left: 20px
 
 .navLink
-    margin: 0 20px
+    display: block
+    padding: 0 16px
+    line-height: inherity
+    cursor: pointer
     align-self: flex-end
+    color: $color-stone
 
 .subMain
     background-color: $color-red
     color: white
-    padding: 15px 0
 
 .subContainer
     max-width: 974px
+    list-style: none
+    padding-left: 0
     margin: 0 auto
+    color: white
+    text-align: left
+
+.subNavList
+    display: flex
+    line-height: 45px
+    margin: 0
+    padding-left: 0
+
+.subNavListItem
+    margin-right: 30px
+    margin-left: 0
+    display: inline-block
+    position: relative
+    &:hover
+        .subMenuList
+            display: block
+    
+
+.subMenuList
+    list-style: none
+    display: none
+    position: absolute
+    background-color: $color-red
+    width: 200px
+    padding-left: 0
+    z-index: 1
+
+
+.subMenuListItem
+    padding-left: 10px
+    border-top: 1px solid $color-stone
+    &:hover
+        background-color: $color-tana
+        color: black
+
+
+.footer
+    height: 60px
+    background-color: $color-red
+    color: $color-white
+    padding: 20px
+
+
