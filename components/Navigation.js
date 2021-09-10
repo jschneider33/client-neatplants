@@ -15,6 +15,9 @@ export default function Navigation(){
                     <Link href="/shop">
                         <a className={styles.navLink}>Shop</a>
                     </Link>
+                    <Link href="/posts">
+                        <a className={styles.navLink}>Posts</a>
+                    </Link>
                 </Nav>
             </Container>
       </Navbar>

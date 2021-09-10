@@ -2,27 +2,25 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.sass'
 
 import Header from "../components/Header"
+import MainLayout from '../components/layouts/MainLayout'
 import ProductPreviews from "../components/ProductPreviews";
 import ShopPreview from "../components/ShopPreview";
 import ShopBySize from '../components/ShopBySize';
 import ShopBy from '../components/ShopBy';
 import BlogPreviews from "../components/BlogPreviews";
 import Footer from "../components/Footer"
-import { getCategoryFromID, getProductsByCategory, listCategories } from '../lib/commerce/productAPI';
+import { getCategoryFromSlug, getProductsByCategory, listCategories } from '../lib/commerce/productAPI';
 
-export default function Home({ featuredProducts, categories, sizeCat }) {
+export default function Home({ categories, lightCategory, growthCategory }) {
 
-  console.log(categories);
+  // console.log(categories);
 
   const s = "size";
   const g = "genera";
   const l = "light";
-  console.log(sizeCat);
+  // console.log(lightCategory);
 
-  // const a = categories.filter(e => e.slug == g);
-  // console.log("a")
-
-  // console.log(a)
+  // lightCategory.map(lc => console.log(lc));
 
   const monsterasContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
@@ -45,7 +43,11 @@ export default function Home({ featuredProducts, categories, sizeCat }) {
       /> */}
       <ShopBy 
         category={categories.filter(category => category.slug == "growth-direction")}
-        tagline="A plant for every nook and cranny"
+        tagline="Whichever direction, growth is growth"
+      />
+      <ShopBy 
+        category={categories.filter(category => category.slug == "light")}
+        tagline="Bright or dim, there's a plant for that"
       />
       
       <div className={styles.shopByChild}>
@@ -68,20 +70,24 @@ export default function Home({ featuredProducts, categories, sizeCat }) {
       </div>
 
       <BlogPreviews />
-      <Footer />
     </div>
   )
-}
+};
+
+Home.Layout = MainLayout;
+
 
 export async function getStaticProps(){
-  const featuredProducts = await getProductsByCategory("featured");
+  // const featuredProducts = await getProductsByCategory("featured");
   const categories = await listCategories();
-  const sizeCat = await getCategoryFromID("cat_ZM8X5nM9Nopv4q");
+  const growthCategory = await getCategoryFromSlug("growth-direction");
+  const lightCategory = await getCategoryFromSlug("light");
     return {
       props: {
         categories,
-        featuredProducts,
-        sizeCat
+        // featuredProducts,
+        growthCategory,
+        lightCategory
       }
   }
 };
